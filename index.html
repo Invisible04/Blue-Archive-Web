@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Archive</title>
+    <link rel="icon" type="image/x-icon" href="system/img/icon/SYS_GAME_ICON.png">
+
+    <!-- Library -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/jquery.html5Loader.js"></script>
+    <script src="lib/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="lib/sweetalert2.min.css">
+    <script src="lib/myLib.js"></script>
+
+    <!-- Font -->
+    <link rel="stylesheet" href="system/interface/style/font/loadPage.css">
+
+    <!-- Config -->
+    <script src="system/config/script/startup.js" defer></script>
+    <script src="system/config/script/assetmanager.js" defer></script>
+    <script src="system/config/script/timer.js" defer></script>
+    <script src="system/config/script/gameengine.js"defer></script>
+    <script src="system/config/script/util.js" defer></script>
+    <link rel="stylesheet" href="system/config/style/preventTextSelect.css">
+    <link rel="stylesheet" href="system/config/style/cursor.css">
+
+    <!-- Program -->
+        <!-- Page -->
+        <script src="system/program/script/page/load/main.js" defer></script>
+        <!-- Others -->
+        <script src="system/program/script/others/click animation/main.js" defer></script>
+        <script src="system/program/script/others/startup/preload.js"></script>
+
+    <!-- Interface -->
+        <!-- Page -->
+        <link rel="stylesheet" href="system/interface/style/page/load/main.css">
+        <!-- Others -->
+        <link rel="stylesheet" href="system/interface/style/others/click animation/main.css">
+        <link rel="stylesheet" href="system/interface/style/others/startup/preload.css">
+</head>
+<body>
+    <div id="splash-screen">
+        <video autoplay muted>
+            <source src="assets/media/preload/Video/logo.mp4">
+        </video>
+    </div>
+    <div id="main-screen">
+        <div id="main-layer">
+            <video id="ml-vid-op" preload="metadata" autoplay muted loop>
+                <source id="ml-vid-op-src" src="assets/media/preload/Video/title.mp4" type="video/mp4" />
+            </video>
+            <img id="ml-game-logo" loading="eager" src="system/img/icon/Blue_Archive_EN_logo_White.svg" alt="Blue Archive Logo">
+        </div>
+        <div id="interface-layer">
+            <div id="il-top-interface">
+                <div id="ilti-info-box">
+                    <p>UID: 000001</p>
+                    <p>Ver: 1.0.0</p>
+                </div>
+            </div>
+            <div id="il-center-interface"></div>
+            <div id="il-bottom-interface">
+                <div id="ilbi-top-box">
+                    <div id="ilbitb-start-info-box">TOUCH TO START</div>
+                </div>
+                <div id="ilbi-interface-box">
+                    <div id="ilbiib-menu-btn">Menu</div>
+                    <div id="ilbiib-downloading-box">
+                        <div id="ilbiibdb-downloading-out">
+                            <div id="ilbiibdb-downloading-in"></div>
+                        </div>
+                        <div id="ilbiibdb-downloading-text">
+                            <img id="ilbiibdbdt-loading-ani" src="assets/icon/ui/loading-ani.png" alt="">
+                            <p id="ilbiibdbdt-loading-text">Resetting the game data.</p>
+                            <p id="ilbiibdbdt-loading-text-data" hidden>[0MB/0MB]</p>
+                        </div>
+                    </div>
+                    <div id="ilbiib-loading-box"></div>
+                </div>
+            </div>
+            <button id="ml-fullscreen-btn" hidden>Full Screen</button>
+        </div>
+        <div id="effect-layer" hidden></div>
+    </div>
+    <canvas id="_altar" width="1024" height="768" style="background: white; border: 1px solid black" tabindex="0" hidden></canvas>
+</body>
+</html>
