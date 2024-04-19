@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Archive</title>
+    <link rel="icon" type="image/x-icon" href="system/img/icon/SYS_GAME_ICON.png">
+
+    <!-- Import -->
+    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script-->
+
+    <!-- Library -->
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/sweetalert2.min.js"></script>
+    <script src="lib/pixi.js"></script>
+    <script src="lib/pixi-spine.js"></script>
+    <link rel="stylesheet" href="lib/sweetalert2.min.css">
+    <script src="lib/myLib.js"></script>
+    <script src="lib/utility.js"></script>
+
+    <!-- Font -->
+    <link rel="stylesheet" href="system/interface/style/font/loadPage.css">
+    <link rel="stylesheet" href="system/interface/style/font/font.css">
+
+    <!-- Config -->
+    <link rel="stylesheet" href="system/config/style/preventTextSelect.css">
+    <link rel="stylesheet" href="system/config/style/cursor.css">
+
+    <!-- Program -->
+        <!-- Page -->
+        <!-- Others -->
+        <script src="system/program/script/others/click animation/main.js" defer></script>
+        <script src="system/program/script/others/spine/main.js"></script>
+        <script src="system/program/script/others/spine/preload.js" defer></script>
+
+    <!-- Interface -->
+        <!-- Page -->
+        <link rel="stylesheet" href="system/interface/style/page/home/main.css">
+        <!-- Others -->
+        <link rel="stylesheet" href="system/interface/style/others/click animation/main.css">
+</head>
+<body>
+    <div class="main-screen">
+        <div class="main-layer">
+            <div class="char-screen">
+                <canvas id="canvas-screen"></canvas>
+            </div>
+            <div class="l2d-screen"></div>
+        </div>
+        <div class="interface-layer">
+            <div class="top-box">
+                <div class="topleft-box">
+                    <div class="profile-bar">
+                        <div class="profile-bar-deco">
+                            <div class="level-box">
+                                <p class="level-text">Lv.</p>
+                                <p class="level-num">99</p>
+                            </div>
+                        </div>
+                        <div class="profile-bar-box">
+                            <p class="profile-name">Shadow</p>
+                            <div class="profile-level-box">
+                                <div class="level-bar">
+                                    <div class="level-bar-in"></div>
+                                </div>
+                                <p class="level-num">99999/99999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="action-box">
+                        <div class="ab-line-1">
+                            <div class="notice-box">
+                                <img src="assets/icon/ui/topleft-btn/notice.png" alt="Notice">
+                                <p>Notice</p>
+                            </div>
+                            <div class="momotalk-box">
+                                <img src="assets/icon/ui/topleft-btn/momotalk.png" alt="Momotalk">
+                                <p>Momotalk</p>
+                            </div>
+                        </div>
+                        <div class="ab-line-2">
+                            <div class="task-box">
+                                <img src="assets/icon/ui/topleft-btn/task.png" alt="Notice">
+                                <p>Tasks</p>
+                                <div class="daily-tasks">0/9</div>
+                            </div>
+                            <div class="pyroxene-box">
+                                <img src="assets/icon/ui/topleft-btn/buy-pyroxene.png" alt="Buy Pyroxene">
+                                <p>Buy Pyroxene</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="topright-box">
+                    <div class="floating-bar">
+                        <div class="energy-bar floating-box">
+                            <div class="energy-bar-deco"></div>
+                            <div class="energy-box res-box">
+                                <img class="res-icon energy-icon" src="assets/icon/ui/currency/Currency_Icon_AP.png" alt="Energy">
+                                <p class="res-num energy-num">999/999</p>
+                                <img class="add-icon" src="assets/icon/ui/add-icon.png" alt="Add">
+                            </div>
+                        </div>
+                        <div class="credit-bar floating-box">
+                            <div class="credit-bar-deco"></div>
+                            <div class="credit-box res-box">
+                                <img class="res-icon credit-icon" src="assets/icon/ui/currency/Currency_Icon_Gold.png" alt="Credit">
+                                <p class="res-num credit-num">999,999,999,999</p>
+                            </div>
+                        </div>
+                        <div class="gems-bar floating-box">
+                            <div class="gems-bar-deco"></div>
+                            <div class="gems-box res-box">
+                                <img class="res-icon gems-icon" src="assets/icon/ui/currency/Currency_Icon_Gem.png" alt="Pyroxene">
+                                <p class="res-num pyroxene-num">9999999</p>
+                                <img class="add-icon" src="assets/icon/ui/add-icon.png" alt="Add">
+                            </div>
+                        </div>
+                        <div class="navigation-bar floating-box">
+                            <div class="navigation-bar-deco">
+                                <div class="deco-box"></div>
+                                <div class="divider-bar"></div>
+                                <div class="deco-box"></div>
+                                <div class="divider-bar"></div>
+                                <div class="deco-box"></div>
+                            </div>
+                            <div class="navigation-box">
+                                <div class="btn-icon-box recollection-box">
+                                    <img src="assets/icon/ui/recollection-icon.png" alt="Recollection">
+                                </div>
+                                <div class="btn-icon-box mail-box">
+                                    <img src="assets/icon/ui/mail-icon.png" alt="Mail">
+                                </div>
+                                <div class="btn-icon-box menu-box">
+                                    <img src="assets/icon/ui/menu-icon.png" alt="Menu">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-interface-box">
+                        <div class="preview-change-btn">
+                            <div class="preview-change-btn-deco"></div>
+                            <div class="preview-change-btn-box">
+                                <img src="assets/icon/ui/zoom-icon.png" alt="Zoom">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="top-event-box">
+                        <div class="event-icon-box">
+                            <div class="event-icon-preview">
+                                <div class="event-preview-box preview-box-0">
+                                    <img class="event-preview preview-0" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                </div>
+                                <div class="event-preview-box preview-box-1">
+                                    <img class="event-preview preview-1" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                </div>
+                                <div class="event-preview-box preview-box-2">
+                                    <img class="event-preview preview-2" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                </div>
+                                <div class="event-preview-box preview-box-3">
+                                    <img class="event-preview preview-3" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                </div>
+                            </div>
+                            <div class="event-icon-dot">
+                                <div class="dot-bar">
+                                    <div class="dot dot-0"></div>
+                                    <div class="dot dot-1"></div>
+                                    <div class="dot dot-2"></div>
+                                    <div class="dot dot-3"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-box">
+                <div class="left-btn"><img src="assets/icon/ui/arrow-icon.png" alt="Arrow Left"></div>
+                <div class="right-btn"><img src="assets/icon/ui/arrow-icon.png" alt="Arrow Right"></div>
+            </div>
+            <div class="bottom-box">
+                <div class="space-box"></div>
+                <div class="top-box">
+                    <div class="left-box">
+                        <div class="event-bottom-box">
+                            <img class="event-banner event-banner-0" src="assets/icon/ui/events/en/Event_Banner_50000_En.png" alt="Event Banner">
+                        </div>
+                    </div>
+                    <div class="right-box">
+                        <div class="event-notif-box">
+                            <img src="assets/icon/ui/event-notice.png" alt="Event Notif">
+                            <p>Event Notif.</p>
+                        </div>
+                        <div class="campaign-box">
+                            <img src="assets/icon/ui/lobby-icon-work.png" alt="Lobby Work">
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-box">
+                    <div class="float-nav-bar-deco"></div>
+                    <div class="float-nav-bar">
+                        <div class="float-box cafe-box">
+                            <img src="assets/icon/ui/float-icon/cafe-icon.png" alt="Cafe">
+                            <p>Cafe</p>
+                        </div>
+                        <div class="float-box lesson-box">
+                            <img src="assets/icon/ui/float-icon/lesson-icon.png" alt="Lesson">
+                            <p>Lesson</p>
+                        </div>
+                        <div class="float-box students-box">
+                            <img src="assets/icon/ui/float-icon/students-icon.png" alt="Students">
+                            <p>Students</p>
+                        </div>
+                        <div class="float-box formation-box">
+                            <img src="assets/icon/ui/float-icon/formation-icon.png" alt="Formation">
+                            <p>Formation</p>
+                        </div>
+                        <div class="float-box social-box">
+                            <img src="assets/icon/ui/float-icon/club-icon.png" alt="Club">
+                            <p>Club</p>
+                        </div>
+                        <div class="float-box crafting-box">
+                            <img src="assets/icon/ui/float-icon/crafting-icon.png" alt="Crafting">
+                            <p>Crafting</p>
+                        </div>
+                        <div class="float-box shop-box">
+                            <img src="assets/icon/ui/float-icon/shop-icon.png" alt="Shop">
+                            <p>Shop</p>
+                        </div>
+                        <div class="float-box recruit-box">
+                            <img src="assets/icon/ui/float-icon/recruit-icon.png" alt="Recruit">
+                            <p>Recruit</p>
+                        </div>
+                        <div class="float-bar-deco">
+                            <div class="float-bar-deco-space"></div>
+                            <div class="float-bar-deco-box">
+                                <img src="assets/icon/ui/decoration/game-deco.png" alt="Decoration">
+                                <p>2:43 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect-layer"></div>
+    </div>
+</body>
+</html>
