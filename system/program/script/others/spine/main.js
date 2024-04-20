@@ -5,7 +5,7 @@ let audios;
 let isCharacterLoaded = false;
 let debug = 0; //set via console
 
-function loadChar(model = "./assets/spine/Students/Atsuko_spr.skel") {
+function loadChar(model = "./assets/spine/Students/atsuko_spr.skel") {
     isCharacterLoaded = false;
     // remove previous spine
     if (app.stage.children.length > 0) {
