@@ -1,0 +1,22 @@
+#loader-box{
+    width: calc(100% - 4vh);
+    height: 0.6vh;
+    background-color: gray;
+    border-radius: 1vw;
+    overflow: hidden;
+    margin: 5vh 2vh 3vh 2vh;
+}
+
+#loader-in{
+    width: 0%;
+    height: 100%;
+    background-color: blue;
+    border-radius: 1vw;
+}
+
+#load-text{
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: Ubuntu;
+}
