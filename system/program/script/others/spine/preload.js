@@ -125,8 +125,6 @@ async function main() {
     }
     await updateCanvas(localStorage.getItem("blue-archive-res-width"), localStorage.getItem("blue-archive-res-height"));
     loadChar(config.models[8]);
-
-    console.log(config)
 }
 
 main();
