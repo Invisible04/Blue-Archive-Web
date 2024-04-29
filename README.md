@@ -1,4 +1,4 @@
-# Blue-Archive-Web-Game
+# Blue-Archive-Web
 ~ Blue Archive Fan Project
 
 ### Description
