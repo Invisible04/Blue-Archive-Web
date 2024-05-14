@@ -1,0 +1,17 @@
+.custom-layer > .select-duty-box{
+    width: 60%;
+    height: 80%;
+}
+
+.sdb-title > p::after{
+    display: block;
+    content: 'Select Duty';
+}
+
+.sdb-title > .deco{
+    width: 19%;
+}
+
+.ap-purchase-box > .sdb-container{
+    
+}
