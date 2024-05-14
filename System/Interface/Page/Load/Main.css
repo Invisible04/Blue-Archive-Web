@@ -32,6 +32,6 @@ body{
     width: 100%;
     height: 100%;
     background-color: skyblue;
-    background-image: url("../../../../Assets/Background/SteelBackground.webp");
+    background-image: url("../../../../Assets/UI/Background/SteelBackground.webp");
     overflow: hidden;
 }
