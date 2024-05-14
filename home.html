@@ -4,43 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blue Archive</title>
-    <link rel="icon" type="image/x-icon" href="system/img/icon/SYS_GAME_ICON.png">
+    <link rel="icon" type="image/x-icon" href="System/Config/Image/Icon/SYS_GAME_ICON.png">
 
     <!-- Import -->
-    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/css/uikit.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.9.2/dist/js/uikit-icons.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script-->
+    <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <!-- Library -->
-    <script src="lib/jquery.min.js"></script>
-    <script src="lib/sweetalert2.min.js"></script>
-    <script src="lib/pixi.js"></script>
-    <script src="lib/pixi-spine.js"></script>
-    <link rel="stylesheet" href="lib/sweetalert2.min.css">
-    <script src="lib/myLib.js"></script>
-    <script src="lib/utility.js"></script>
+    <script src="Lib/jquery.min.js"></script>
+    <script src="Lib/jquery.html5Loader.js"></script>
+    <script src="Lib/sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="Lib/sweetalert2.min.css">
+    <script src="Lib/utility.js"></script>
 
     <!-- Font -->
-    <link rel="stylesheet" href="system/interface/style/font/loadPage.css">
-    <link rel="stylesheet" href="system/interface/style/font/font.css">
+    <link rel="stylesheet" href="System/Interface/Font/Font.css">
+    <link rel="stylesheet" href="System/Interface/Font/LoadPage.css">
 
     <!-- Config -->
-    <link rel="stylesheet" href="system/config/style/preventTextSelect.css">
-    <link rel="stylesheet" href="system/config/style/cursor.css">
+    <link rel="stylesheet" href="System/Program/Others/Style/cursor.css">
+    <link rel="stylesheet" href="System/Program/Others/Style/preventTextSelect.css">
+    <link rel="stylesheet" href="System/Program/Others/Style/preventImageDrag.css">
+    <link rel="stylesheet" href="System/Program/Others/Style/scrollbar.css">
 
     <!-- Program -->
         <!-- Page -->
+        <script src="System/Program/Page/Home/Startup.js" defer></script>
+        <script src="System/Program/Page/Home/Main.js" defer></script>
         <!-- Others -->
-        <script src="system/program/script/others/click animation/main.js" defer></script>
-        <script src="system/program/script/others/spine/main.js"></script>
-        <script src="system/program/script/others/spine/preload.js" defer></script>
+        <script src="System/Program/Others/SubProgram/ClickAnimation/main.js" defer></script>
+        <link rel="stylesheet" href="System/Program/Others/SubProgram/ClickAnimation/main.css">
 
     <!-- Interface -->
         <!-- Page -->
-        <link rel="stylesheet" href="system/interface/style/page/home/main.css">
-        <!-- Others -->
-        <link rel="stylesheet" href="system/interface/style/others/click animation/main.css">
+        <link rel="stylesheet" href="System/Interface/Page/Home/Main.css">
+        <link rel="stylesheet" href="System/Interface/Page/Home/MainLayer.css">
+        <link rel="stylesheet" href="System/Interface/Page/Home/InterfaceLayer.css">
+        <link rel="stylesheet" href="System/Interface/Page/Home/CustomLayer.css">
+        <link rel="stylesheet" href="System/Interface/Page/Home/EffectLayer.css">
+            <!-- Custom Layer -->
+            <link rel="stylesheet" href="System/Interface/Page/Home/CustomLayer/APPurchase.css">
+            <link rel="stylesheet" href="System/Interface/Page/Home/CustomLayer/BuyPyroxene.css">
+            <link rel="stylesheet" href="System/Interface/Page/Home/CustomLayer/SelectDuty.css">
+            <link rel="stylesheet" href="System/Interface/Page/Home/CustomLayer/MailBox.css">
+            <link rel="stylesheet" href="System/Interface/Page/Home/CustomLayer/Menu.css">
 </head>
 <body>
     <div class="main-screen">
@@ -57,7 +63,7 @@
                         <div class="profile-bar-deco">
                             <div class="level-box">
                                 <p class="level-text">Lv.</p>
-                                <p class="level-num">1</p>
+                                <p class="level-num">99</p>
                             </div>
                         </div>
                         <div class="profile-bar-box">
@@ -66,29 +72,29 @@
                                 <div class="level-bar">
                                     <div class="level-bar-in"></div>
                                 </div>
-                                <p class="level-num">0/10</p>
+                                <p class="level-num">99999/99999</p>
                             </div>
                         </div>
                     </div>
                     <div class="action-box">
                         <div class="ab-line-1">
                             <div class="notice-box">
-                                <img src="assets/icon/ui/topleft-btn/notice.png" alt="Notice">
+                                <img src="Assets/UI/Icon/Home/notice.png" alt="Notice">
                                 <p>Notice</p>
                             </div>
                             <div class="momotalk-box">
-                                <img src="assets/icon/ui/topleft-btn/momotalk.png" alt="Momotalk">
+                                <img src="Assets/UI/Icon/Home/momotalk.png" alt="Momotalk">
                                 <p>Momotalk</p>
                             </div>
                         </div>
                         <div class="ab-line-2">
                             <div class="task-box">
-                                <img src="assets/icon/ui/topleft-btn/task.png" alt="Notice">
+                                <img src="Assets/UI/Icon/Home/task.png" alt="Notice">
                                 <p>Tasks</p>
                                 <div class="daily-tasks">0/9</div>
                             </div>
                             <div class="pyroxene-box">
-                                <img src="assets/icon/ui/topleft-btn/buy-pyroxene.png" alt="Buy Pyroxene">
+                                <img src="Assets/UI/Icon/Home/buy-pyroxene.png" alt="Buy Pyroxene">
                                 <p>Buy Pyroxene</p>
                             </div>
                         </div>
@@ -99,24 +105,24 @@
                         <div class="energy-bar floating-box">
                             <div class="energy-bar-deco"></div>
                             <div class="energy-box res-box">
-                                <img class="res-icon energy-icon" src="assets/icon/ui/currency/Currency_Icon_AP.png" alt="Energy">
-                                <p class="res-num energy-num">80/80</p>
-                                <img class="add-icon" src="assets/icon/ui/add-icon.png" alt="Add">
+                                <img class="res-icon energy-icon" src="Assets/UI/Icon/Others/Currency/Currency_Icon_AP.png" alt="Energy">
+                                <p class="res-num energy-num">999/999</p>
+                                <img class="add-icon" src="Assets/UI/Icon/Home/add-icon.png" alt="Add">
                             </div>
                         </div>
                         <div class="credit-bar floating-box">
                             <div class="credit-bar-deco"></div>
                             <div class="credit-box res-box">
-                                <img class="res-icon credit-icon" src="assets/icon/ui/currency/Currency_Icon_Gold.png" alt="Credit">
-                                <p class="res-num credit-num">10,000</p>
+                                <img class="res-icon credit-icon" src="Assets/UI/Icon/Others/Currency/Currency_Icon_Gold.png" alt="Credit">
+                                <p class="res-num credit-num">999,999,999,999</p>
                             </div>
                         </div>
                         <div class="gems-bar floating-box">
                             <div class="gems-bar-deco"></div>
                             <div class="gems-box res-box">
-                                <img class="res-icon gems-icon" src="assets/icon/ui/currency/Currency_Icon_Gem.png" alt="Pyroxene">
-                                <p class="res-num pyroxene-num">0</p>
-                                <img class="add-icon" src="assets/icon/ui/add-icon.png" alt="Add">
+                                <img class="res-icon gems-icon" src="Assets/UI/Icon/Others/Currency/Currency_Icon_Gem.png" alt="Pyroxene">
+                                <p class="res-num pyroxene-num">9999999</p>
+                                <img class="add-icon" src="Assets/UI/Icon/Home/add-icon.png" alt="Add">
                             </div>
                         </div>
                         <div class="navigation-bar floating-box">
@@ -129,13 +135,13 @@
                             </div>
                             <div class="navigation-box">
                                 <div class="btn-icon-box recollection-box">
-                                    <img src="assets/icon/ui/recollection-icon.png" alt="Recollection">
+                                    <img src="Assets/UI/Icon/Home/recollection-icon.png" alt="Recollection">
                                 </div>
                                 <div class="btn-icon-box mail-box">
-                                    <img src="assets/icon/ui/mail-icon.png" alt="Mail">
+                                    <img src="Assets/UI/Icon/Home/mail-icon.png" alt="Mail">
                                 </div>
                                 <div class="btn-icon-box menu-box">
-                                    <img src="assets/icon/ui/menu-icon.png" alt="Menu">
+                                    <img src="Assets/UI/Icon/Home/menu-icon.png" alt="Menu">
                                 </div>
                             </div>
                         </div>
@@ -144,7 +150,7 @@
                         <div class="preview-change-btn">
                             <div class="preview-change-btn-deco"></div>
                             <div class="preview-change-btn-box">
-                                <img src="assets/icon/ui/zoom-icon.png" alt="Zoom">
+                                <img src="Assets/UI/Icon/Home/zoom-icon.png" alt="Zoom">
                             </div>
                         </div>
                     </div>
@@ -152,16 +158,16 @@
                         <div class="event-icon-box">
                             <div class="event-icon-preview">
                                 <div class="event-preview-box preview-box-0">
-                                    <img class="event-preview preview-0" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                    <img class="event-preview preview-0" src="Assets/Events/Icon/En/Event_Enter_Archive_En.png" alt="Event Recap">
                                 </div>
                                 <div class="event-preview-box preview-box-1">
-                                    <img class="event-preview preview-1" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                    <img class="event-preview preview-1" src="Assets/Events/Icon/En/Event_Enter_Archive_En.png" alt="Event Recap">
                                 </div>
                                 <div class="event-preview-box preview-box-2">
-                                    <img class="event-preview preview-2" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                    <img class="event-preview preview-2" src="Assets/Events/Icon/En/Event_Enter_Archive_En.png" alt="Event Recap">
                                 </div>
                                 <div class="event-preview-box preview-box-3">
-                                    <img class="event-preview preview-3" src="assets/icon/ui/events/en/Event_Enter_Archive_En.png" alt="Event Recap">
+                                    <img class="event-preview preview-3" src="Assets/Events/Icon/En/Event_Enter_Archive_En.png" alt="Event Recap">
                                 </div>
                             </div>
                             <div class="event-icon-dot">
@@ -177,24 +183,24 @@
                 </div>
             </div>
             <div class="center-box">
-                <div class="left-btn"><img src="assets/icon/ui/arrow-icon.png" alt="Arrow Left"></div>
-                <div class="right-btn"><img src="assets/icon/ui/arrow-icon.png" alt="Arrow Right"></div>
+                <div class="left-btn"><img src="Assets/UI/Icon/Home/arrow-icon.png" alt="Arrow Left"></div>
+                <div class="right-btn"><img src="Assets/UI/Icon/Home/arrow-icon.png" alt="Arrow Right"></div>
             </div>
             <div class="bottom-box">
                 <div class="space-box"></div>
                 <div class="top-box">
                     <div class="left-box">
                         <div class="event-bottom-box">
-                            <img class="event-banner event-banner-0" src="assets/icon/ui/events/en/Event_Banner_50000_En.png" alt="Event Banner">
+                            <img class="event-banner event-banner-0" src="Assets/Events/Banner/En/Event_Banner_50000_En.png" alt="Event Banner">
                         </div>
                     </div>
                     <div class="right-box">
                         <div class="event-notif-box">
-                            <img src="assets/icon/ui/event-notice.png" alt="Event Notif">
+                            <img src="Assets/UI/Icon/Home/event-notice.png" alt="Event Notif">
                             <p>Event Notif.</p>
                         </div>
                         <div class="campaign-box">
-                            <img src="assets/icon/ui/lobby-icon-work.png" alt="Lobby Work">
+                            <img src="Assets/UI/Icon/Home/lobby-icon-work.png" alt="Lobby Work">
                         </div>
                     </div>
                 </div>
@@ -202,46 +208,387 @@
                     <div class="float-nav-bar-deco"></div>
                     <div class="float-nav-bar">
                         <div class="float-box cafe-box">
-                            <img src="assets/icon/ui/float-icon/cafe-icon.png" alt="Cafe">
+                            <img src="Assets/UI/Icon/Home/Navigation/cafe-icon.png" alt="Cafe">
                             <p>Cafe</p>
                         </div>
                         <div class="float-box lesson-box">
-                            <img src="assets/icon/ui/float-icon/lesson-icon.png" alt="Lesson">
+                            <img src="Assets/UI/Icon/Home/Navigation/lesson-icon.png" alt="Lesson">
                             <p>Lesson</p>
                         </div>
                         <div class="float-box students-box">
-                            <img src="assets/icon/ui/float-icon/students-icon.png" alt="Students">
+                            <img src="Assets/UI/Icon/Home/Navigation/students-icon.png" alt="Students">
                             <p>Students</p>
                         </div>
                         <div class="float-box formation-box">
-                            <img src="assets/icon/ui/float-icon/formation-icon.png" alt="Formation">
+                            <img src="Assets/UI/Icon/Home/Navigation/formation-icon.png" alt="Formation">
                             <p>Formation</p>
                         </div>
                         <div class="float-box social-box">
-                            <img src="assets/icon/ui/float-icon/club-icon.png" alt="Club">
+                            <img src="Assets/UI/Icon/Home/Navigation/club-icon.png" alt="Club">
                             <p>Club</p>
                         </div>
                         <div class="float-box crafting-box">
-                            <img src="assets/icon/ui/float-icon/crafting-icon.png" alt="Crafting">
+                            <img src="Assets/UI/Icon/Home/Navigation/crafting-icon.png" alt="Crafting">
                             <p>Crafting</p>
                         </div>
                         <div class="float-box shop-box">
-                            <img src="assets/icon/ui/float-icon/shop-icon.png" alt="Shop">
+                            <img src="Assets/UI/Icon/Home/Navigation/shop-icon.png" alt="Shop">
                             <p>Shop</p>
                         </div>
                         <div class="float-box recruit-box">
-                            <img src="assets/icon/ui/float-icon/recruit-icon.png" alt="Recruit">
+                            <img src="Assets/UI/Icon/Home/Navigation/recruit-icon.png" alt="Recruit">
                             <p>Recruit</p>
                         </div>
                         <div class="float-bar-deco">
                             <div class="float-bar-deco-space"></div>
                             <div class="float-bar-deco-box">
-                                <img src="assets/icon/ui/decoration/game-deco.png" alt="Decoration">
+                                <img src="Assets/UI/Decoration/game-deco.png" alt="Decoration">
                                 <p>2:43 AM</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="custom-layer">
+            <div class="nav-bar">
+                <div class="cnb-back-btn-box">
+                    <img class="cnb-back-btn" src="Assets/UI/Icon/Home/back-arrow.png" alt="Back">
+                </div>
+                <div class="cnb-title-box">
+                    <p class="cntb-title-text mail-nav-title-text"></p>
+                    <div class="cntb-deco"></div>
+                </div>
+                <div class="cnb-nav-item-box">
+                    <div class="cnib-energy-box">
+                        <img src="Assets/UI/Icon/Others/Currency/Currency_Icon_AP.png" alt="Energy">
+                        <p>999/999</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="cnib-credit-box">
+                        <img src="Assets/UI/Icon/Others/Currency/Currency_Icon_Gold.png" alt="Credit">
+                        <p>999,999,999,999</p>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="cnib-pyroxene-box">
+                        <img src="Assets/UI/Icon/Others/Currency/Currency_Icon_Gem.png" alt="Pyroxene">
+                        <p>9999999</p>
+                    </div>
+                    <div class="divider"></div>
+                    <img class="cnib-settings-icon" src="Assets/UI/Icon/Home/settings-icon.png" alt="Settings">
+                    <div class="divider"></div>
+                    <img class="cnib-home-icon" src="Assets/UI/Icon/Home/home-icon.png" alt="Home">
+                </div>
+            </div>
+            <div class="custom-box">
+                <div class="title-box">
+                    <div class="space"></div>
+                    <div class="title">
+                        <p></p>
+                        <div class="deco"></div>
+                    </div>
+                    <img class="menu-close-btn" src="Assets/UI/Icon/Load/close.png" alt="Close">
+                </div>
+                <div class="container">
+                    <div class="container-menu">
+                        <div class="ccm-left-side">
+                            <div class="ccm-option-box ccm-item-box">
+                                <div class="ccmib-icon-box">
+                                    <img src="Assets/UI/Icon/Home/Menu/option-icon.png" alt="Option">
+                                </div>
+                                <p>Option</p>
+                            </div>
+                            <div class="ccm-equipments-box ccm-item-box">
+                                <div class="ccmib-icon-box">
+                                    <img src="Assets/UI/Icon/Home/Menu/equipments-icon.png" alt="Equipments">
+                                </div>
+                                <p>Equipments</p>
+                            </div>
+                            <div class="ccm-scrapbook-box ccm-item-box">
+                                <div class="ccmib-icon-box">
+                                    <img src="Assets/UI/Icon/Home/dummy-icon.png" alt="Scrap Book">
+                                </div>
+                                <p>Scrap Book</p>
+                            </div>
+                        </div>
+                        <div class="ccm-right-side">
+                            <div class="ccm-account-box ccm-item-box">
+                                <div class="ccmib-icon-box">
+                                    <img src="Assets/UI/Icon/Home/Menu/account-icon.png" alt="Account">
+                                </div>
+                                <p>Account</p>
+                            </div>
+                            <div class="ccm-items-box ccm-item-box">
+                                <div class="ccmib-icon-box">
+                                    <img src="Assets/UI/Icon/Home/Menu/items-icon.png" alt="Items">
+                                </div>
+                                <p>Items</p>
+                            </div>
+                            <div class="ccm-bulk-box ccm-item-box">
+                                <div class="ccmib-icon-box">
+                                    <img src="Assets/UI/Icon/Home/dummy-icon.png" alt="Bulk">
+                                </div>
+                                <p>Bulk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-ap-purchase">
+                        <div class="capp-description-box">
+                            <p class="title">Buy AP120?</p>
+                            <p class="desc">3/3 purchase available</p>
+                        </div>
+                        <div class="capp-ap-control-box">
+                            <div class="min-btn-box capp-box">
+                                <div class="deco"></div>
+                                <div class="content">MIN</div>
+                            </div>
+                            <div class="decrease-btn-box capp-box">
+                                <div class="deco"></div>
+                                <div class="content">-</div>
+                            </div>
+                            <div class="pyroxene-display-box capp-center">
+                                <div class="deco">
+                                    <div class="box"></div>
+                                    <img src="Assets/UI/Icon/Others/Currency/Currency_Icon_AP.png" alt="Energy">
+                                </div>
+                                <div class="content-box">
+                                    <p class="ap-before">999</p>
+                                    <img src="Assets/UI/Icon/Home/tutorial-arrow.png" alt="Change to">
+                                    <p class="ap-after">1029</p>
+                                </div>
+                            </div>
+                            <div class="increase-btn-box capp-box">
+                                <div class="deco"></div>
+                                <div class="content">+</div>
+                            </div>
+                            <div class="max-btn-box capp-box">
+                                <div class="deco"></div>
+                                <div class="content">MAX</div>
+                            </div>
+                        </div>
+                        <div class="capp-per-unit-price-box capp-box">
+                            <p class="text">Per Unit</p>
+                            <p class="capp-per-unit-price">30</p>
+                        </div>
+                        <div class="capp-total-price-box capp-box">
+                            <p class="text">Total</p>
+                            <p class="capp-total-price">30</p>
+                        </div>
+                        <div class="capp-action-button-box capp-box">
+                            <div class="cappabb-cancel-btn-box">
+                                <div class="deco"></div>
+                                <div class="deco-effect"></div>
+                                <div class="content">CANCEL</div>
+                            </div>
+                            <div class="cappabb-okey-btn-box">
+                                <div class="deco"></div>
+                                <div class="deco-effect"></div>
+                                <div class="content">OK</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-pyroxene-shop">
+                        <div class="cps-nav-bar">
+                            <div class="tab-1-box psnb-tab-box psnb-tab-box-1">Special Sale</div>
+                            <div class="tab-2-box psnb-tab-box psnb-tab-box-2 psnb-tab-selected">Pyroxene</div>
+                            <div class="tab-3-box psnb-tab-box psnb-tab-box-3">Packages</div>
+                        </div>
+                        <div class="cps-container-box">
+                            <div class="specials-container-outer cpscb-specials-container-outer">
+                                <div class="specials-container cpscb-specials-container">
+                                    <p>Packages not available</p>
+                                </div>
+                            </div>
+                            <div class="pyroxene-container-outer cpscb-pyroxene-container-outer">
+                                <div class="pyroxene-container cpscb-pyroxene-container">
+                                    <div class="cpscb-pc-line-1 cpscb-pc-lines">
+                                        <div class="cpscb-pyroxene-item-1 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">120 Pyroxene <br><p>88 Pcs + (Free) 32 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_120.png" alt="120 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cpscb-pyroxene-item-2 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">490 Pyroxene <br><p>240 Pcs + (Free) 150 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_490.png" alt="490 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cpscb-pyroxene-item-3 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">980 Pyroxene <br><p>720 Pcs + (Free) 260 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_980.png" alt="980 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cpscb-pc-line-2 cpscb-pc-lines">
+                                        <div class="cpscb-pyroxene-item-4 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">1480 Pyroxene <br><p>980 Pcs + (Free) 500 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_1480.png" alt="1480 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cpscb-pyroxene-item-5 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">2940 Pyroxene <br><p>1890 Pcs + (Free) 1050 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_2940.png" alt="2940 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cpscb-pyroxene-item-6 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">4900 Pyroxene <br><p>3100 Pcs + (Free) 1800 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_4900.png" alt="4900 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="cpscb-pc-line-3 cpscb-pc-lines">
+                                        <div class="cpscb-pyroxene-item-7 pyroxene-items">
+                                            <div class="cpscb-deco"></div>
+                                            <div class="cpscb-container">
+                                                <div class="cpscb-pi1-title">10000 Pyroxene <br><p>7200 Pcs + (Free) 2800 Pcs</p></div>
+                                                <div class="cpscd-pi1-line"></div>
+                                                <div class="cpscb-pi1-icon-box">
+                                                    <img src="Assets/UI/Icon/Home/Pyroxene Shop/Pyroxene/Goods_Icon_Gem_10000.png" alt="10000 Pyroxene">
+                                                </div>
+                                                <div class="cpscb-pi1-hint">1 Purchase is possible</div>
+                                                <div class="cpscb-pi1-btn-box">
+                                                    <div class="deco"></div>
+                                                    <img src="Assets/UI/Decoration/button-poly-01.png" alt="">
+                                                    <div class="container">
+                                                        <div class="value-box">
+                                                            <img src="Assets/UI/Icon/Others/" alt="Currency Symbol" hidden>
+                                                            <p class="currency-text">MYR</p>
+                                                            <p class="value">2.40</p>
+                                                        </div>
+                                                        <div class="text">Purchase</div>
+                                                    </div>
+                                                    <div class="value-box-deco"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="packages-container-outer cpscb-packages-container-outer">
+                                <div class="packages-container cpscb-packages-container">
+                                    <p>Packages not available</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="container-deco-box" src="Assets/UI/Decoration/popup-deco-box.png">
+                </div>
+            </div>
+            <div class="mail-box">
+                
             </div>
         </div>
         <div class="effect-layer"></div>
