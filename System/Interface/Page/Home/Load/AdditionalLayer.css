@@ -1,0 +1,139 @@
+/*Additional Layer Setup*/ 
+#additional-layer{
+    margin: auto;
+    transform: translateY(-200%);
+    display: flex;
+}
+
+#main-screen > .show{
+    width: 96.267vw;
+    height: 100vh;
+}
+
+#main-screen > .hide{
+    width: 0vw;
+    height: 0vh;
+}
+
+    #al-float-custom-box{
+        width: 40vw;
+        height: 70vh;
+        margin: auto;
+        border-radius: 2vh;
+        align-self: center;
+        overflow: hidden;
+        box-shadow: 0 1vh 1vh rgb(39, 39, 39);
+        background-color: #EFEFED;
+    }
+
+        #alfcb-title-box{
+            width: 100%;
+            height: 7vh;
+            background-image: url(../../../../Assets/UI/Decoration/Bar_Blue_01.png);
+            background-size: contain;
+            background-position: left;
+            background-repeat: no-repeat;
+            box-shadow: 0 0.02vh 0.2vh rgb(70, 70, 70);
+            display: flex;
+        }
+
+            #alfcbtb-title{
+                width: calc(100% - 20%);
+                height: 100%;
+                margin-left: auto;
+            }
+
+                #alfcbtb-title > p{
+                    width: 100%;
+                    height: calc(85% - 1vh);
+                    text-align: center;
+                    padding-top: 1vh;
+                    font-family: 'Main';
+                    font-size: 2rem;
+                    color: #2D4663;
+                }
+
+                #alfcbtb-title > #deco{
+                    width: 16%;
+                    height: 15%;
+                    margin: auto;
+                    background-color: #FDEE5A;
+                }
+
+            #alfcb-title-box > img{
+                width: calc(10% - 5vh);
+                height: calc(100% - 3vh);
+                padding: 1.5vh 2.5vh 1.5vh 2.5vh;
+            }
+
+            #alfcb-title-box > img:hover{
+                opacity: 0.7;
+            }
+
+        #alfcb-container{
+            width: calc(100% - 34vh);
+            height: calc(100% - 7vh);
+            padding: 0 17vh 0 17vh;
+        }
+
+            #alfcb-container > p{
+                width: 100%;
+                padding: 2vh 0vh;
+                text-align: center;
+                font-family: 'Main';
+                font-size: 1.1rem;
+                font-weight: bold;
+                color: #3E444A;
+            }
+
+            #alfcb-container > hr{
+                margin: 2vh 0 2vh 0;
+            }
+
+            #alfcb-container > .alfcbc-action-box{
+                width: 100%;
+                height: 15%;
+                margin-bottom: 3vh;
+            }
+
+                .alfcbc-action-box > .deco{
+                    width: 100%;
+                    height: 100%;
+                    transform: skew(-13deg);
+                    border-radius: 1.5vh;
+                    display: flex;
+                    overflow: hidden;
+                }
+
+                .alfcbcabd-1{
+                    background-color: #58d0f8;
+                }
+
+                .alfcbcabd-2{
+                    background-color: #bfecfc;
+                }
+
+                    .alfcbcabd-1 > .deco-box-left,
+                    .alfcbcabd-2 > .deco-box-left{
+                        width: 30%;
+                        height: 100%;
+                        margin-right: auto;
+                        transform: skew(15deg) rotate(180deg) translateX(1vw);
+                    }
+
+                    .alfcbcabd-1 > .deco-box-right,
+                    .alfcbcabd-2 > .deco-box-right{
+                        width: 30%;
+                        height: 100%;
+                        margin-left: auto;
+                        transform: skew(15deg) translateX(1vw);
+                    }
+
+                .alfcbc-action-box > p{
+                    width: 100%;
+                    transform: translateY(-225%);
+                    text-align: center;
+                    font-family: 'Main';
+                    font-weight: bold;
+                    color:#2D4663;
+                }
