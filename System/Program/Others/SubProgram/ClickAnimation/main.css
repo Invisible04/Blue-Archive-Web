@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: black;
+}
+
+.click_effect{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 0.1px solid white;
+    background-color: rgba(135, 207, 235, 0.5);
+    margin: -22px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px white,
+                inset 0px 0px 10px white;
+    overflow: hidden;
+    animation: Click_Circle_Animation 0.4s linear;
+    z-index: 2000;
+}
+
+.particle{
+    position: absolute;
+    /*animation: Click_Particle_Animation 0.4s normal;*/
+    opacity: 0;
+}
+
+.particle1{
+    width: 6px;
+    height: 5px;
+}
+
+.particle2{
+    width: 6px;
+    height: 5px;
+}
+
+.particle3{
+    width: 5px;
+    height: 4px;
+}
+
+.particle4{
+    width: 5px;
+    height: 4px;
+}
+
+@keyframes Click_Circle_Animation{
+    0%{
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    /*10%{
+        transform: scale(1.01);
+        opacity: 1;
+    }
+    20%{
+        transform: scale(1.02);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(1.03);
+        opacity: 1;
+    }
+    40%{
+        transform: scale(1.04);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    60%{
+        transform: scale(1.06);
+        opacity: 1;
+    }
+    70%{
+        transform: scale(1.07);
+        opacity: 1;
+    }
+    80%{
+        transform: scale(1.08);
+        opacity: 1;
+    }
+    90%{
+        transform: scale(1.09);
+        opacity: 1;
+    }*/
+    100%{
+        transform: scale(1.1);
+        opacity: 0;
+    }
+}
+
+@keyframes Click_Particle_Animation{
+    0%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    /*10%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    20%{
+        transform: scale(1);
+        opacity: 1;
+    }
+    30%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    40%{
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    50%{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    60%{
+        transform: scale(1.5);
+        opacity: 0.9;
+    }
+    70%{
+        transform: scale(1);
+        opacity: 0.7;
+    }
+    80%{
+        transform: scale(1);
+        opacity: 0.5;
+    }
+    90%{
+        transform: scale(1);
+        opacity: 0.3;
+    }*/
+    100%{
+        transform: scale(1.8);
+        opacity: 1;
+        filter: drop-shadow(0px 0px 3px white);
+    }
+}
