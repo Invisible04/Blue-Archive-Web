@@ -1,0 +1,8 @@
+/*Effect Layer Setup*/
+.effect-layer{
+    width: 96.267vw;
+    height: 100vh;
+    margin: auto;
+    display: none;
+    transform: translateY(-300%);
+}

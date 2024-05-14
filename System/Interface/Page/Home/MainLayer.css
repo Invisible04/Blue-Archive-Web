@@ -1,0 +1,29 @@
+/*Main Layer Setup*/
+.main-layer{
+    width: 96.267vw;
+    height: 100vh;
+    margin: auto;
+    background-color: skyblue;
+    background: url(../../../../Assets/UI/Background/MainOffice.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+    .main-layer > .char-screen{
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+        .char-screen > #canvas-screen{
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+    .main-layer > .l2d-screen{
+        width: 100%;
+        height: 100%;
+    }

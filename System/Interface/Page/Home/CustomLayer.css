@@ -1,0 +1,203 @@
+/*Custom Layer Setup*/
+.custom-layer{
+    width: 96.267vw;
+    height: 100vh;
+    margin: auto;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translateY(-200%);
+}
+
+    .custom-layer > .custom-box{
+        margin: auto;
+        border-radius: 2vh;
+        align-self: center;
+        overflow: hidden;
+        box-shadow: 0 1vh 1vh rgb(39, 39, 39);
+        background-color: #EFEFED;
+    }
+
+        .custom-box > .title-box{
+            width: 100%;
+            height: 7vh;
+            background-image: url(../../../../Assets/UI/Decoration/bar-blue-01.png);
+            background-size: contain;
+            background-position: left;
+            background-repeat: no-repeat;
+            box-shadow: 0 0.02vh 0.2vh rgb(70, 70, 70);
+            display: flex;
+        }
+
+            .title-box > .title{
+                width: calc(100% - calc(1.8vw + 5vh));
+                height: 100%;
+                margin-left: auto;
+                overflow: hidden;
+            }
+
+                .title > p{
+                    width: 100%;
+                    height: calc(85% - 1.5vh);
+                    text-align: center;
+                    padding-top: 1.5vh;
+                    font-family: 'Main';
+                    font-size: 1.5rem;
+                    color: #2D4663;
+                }
+
+                .title > .deco{
+                    height: 15%;
+                    margin: auto;
+                    background-color: #FDEE5A;
+                }
+
+            .title-box > img,
+            .title-box > .space{
+                width: 1.8vw;
+                height: calc(100% - 3vh);
+                padding: 1.5vh 2.5vh 1.5vh 2.5vh;
+            }
+
+            .title-box > img:hover{
+                opacity: 0.7;
+            }
+
+        .custom-box > .container{
+            position: relative;
+            width: 100%;
+            height: calc(100% - 7vh);
+            z-index: 0;
+        }
+
+        .container > .container-deco-box{
+            position: relative;
+            width: 100%;
+            transform: translateY(-100%);
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .container > .container-menu,
+        .container > .container-ap-purchase,
+        .container > .container-pyroxene-shop{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: none;
+            z-index: 2;
+        }
+
+.custom-layer-full{
+    width: 96.267vw;
+    height: 100vh;
+    margin: auto;
+    background-color: #DCECF6;
+    background-image: url(../../../../Assets/UI/);
+    transform: translateY(-200%);
+}
+
+.custom-layer > .nav-bar{
+    display: none;
+}
+
+.custom-layer-full > .nav-bar{
+    width: 100%;
+    height: 7vh;
+    background-color: #F8FBFB;
+    display: flex;
+    background-image: url(../../../../Assets/UI/Decoration/mail-nav-bg.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-shadow: 0 0.3vh 0.5vh rgb(125, 125, 125);
+}
+
+    .nav-bar > .cnb-back-btn-box{
+        width: calc(8.5vh - 3vh);
+        height: calc(8.5vh - 4vh);
+        padding: 2vh 1.5vh 2vh 1.5vh;
+        margin: 1.5vh 0 0 2vw;
+        border-radius: 50%;
+        display: flex;
+        background-color: #466398;
+    }
+
+        .cnb-back-btn-box > .cnb-back-btn{
+            width: 100%;
+            align-self: center;
+        }
+
+    .nav-bar > .cnb-title-box{
+        min-width: 5vw;
+        height: 100%;
+    }
+
+        .cnb-title-box > .cntb-title-text{
+            min-width: 1vw;
+            height: calc(85% - 2.5vh);
+            padding: 1.5vh 0vh 1vh 3vh;
+            font-size: 1.7rem;
+            color: #2C4563;
+        }
+
+        .cnb-title-box > .cntb-deco{
+            width: 100%;
+            height: 12%;
+            background-color: #FDEE5A;
+        }
+    
+    .nav-bar > .cnb-nav-item-box{
+        width: 65%;
+        height: 100%;
+        margin-left: auto;
+        display: flex;
+    }
+
+        .cnb-nav-item-box > .divider{
+            width: 0.08vw;
+            height: calc(100% - 1.6vw);
+            margin: 0.8vw 0.5vw 0.8vw 0.5vw;
+            transform: skew(-13deg);
+            background-color: #D4D7DA;
+        }
+
+        .cnb-nav-item-box > .cnib-energy-box{
+            width: 24%;
+            height: 100%;
+            display: flex;
+        }
+
+        .cnb-nav-item-box > .cnib-credit-box{
+            width: 30%;
+            height: 100%;
+            display: flex;
+        }
+
+        .cnb-nav-item-box > .cnib-pyroxene-box{
+            width: 24%;
+            height: 100%;
+            display: flex;
+        }
+
+            .cnib-energy-box > img,
+            .cnib-credit-box > img,
+            .cnib-pyroxene-box > img{
+                height: calc(100% - 0.6vw);
+                padding: 0.3vw 0vw;
+            }
+
+            .cnib-energy-box > p,
+            .cnib-credit-box > p,
+            .cnib-pyroxene-box > p{
+                width: calc(100%);
+                height: calc(100% - 1.6vw);
+                color: #4C5866;
+                font-size: 1.4rem;
+                padding: 0.8vw 0.2vw;
+            }
+
+        .cnb-nav-item-box > .cnib-settings-icon,
+        .cnb-nav-item-box > .cnib-home-icon{
+            height: calc(100% - 0.6vw);
+            padding: 0.3vw 0.8vw;
+        }
