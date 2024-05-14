@@ -1,0 +1,291 @@
+.custom-layer > .buy-pyroxene-box{
+    width: 50%;
+    height: 70%;
+}
+
+.bpb-title > p::after{
+    display: block;
+    content: 'Buy Pyroxene';
+}
+
+.bpb-title > .deco{
+    width: 27%;
+}
+
+.bpb-container > .container-pyroxene-shop{
+    position: relative;
+    width: calc(100% - 2vh);
+    height: calc(100% - 2vh);
+    margin: 1vh;
+    border-radius: 0.7vh;
+    background-color: #A9DFF4;
+    z-index: 2;
+}
+
+.container-pyroxene-shop > .cps-nav-bar{
+    width: calc(100% - 2.4vh);
+    height: 7vh;
+    padding: 1vh 1.2vh 0vh 1.2vh;
+    display: flex;
+}
+
+.container-pyroxene-shop > .cps-container-box{
+    width: calc(100% - 1.2vh);
+    height: calc(100% - 9.6vh);
+    background-color: white;
+    border-radius: 1vh;
+    margin: 0 0.1vh 0.1vh 0.1vh;
+    padding: 1vh 0.5vh 0.5vh 0.5vh;
+    overflow: hidden;
+}
+
+.cps-nav-bar > .psnb-tab-box{
+    width: 50%;
+    height: calc(100% - 2vh);
+    color: black;
+    border-radius: 1vh 1vh 0 0;
+    text-align: center;
+    font-family: 'Main Bold';
+    font-size: 1.1rem;
+    padding-top: 2vh;
+}
+
+.cps-nav-bar > .tab-1-box{
+    opacity: 0.7;
+    background-color: transparent;
+}
+
+.cps-nav-bar > .tab-2-box{
+    opacity: 0.7;
+    background-color: transparent;
+}
+
+.cps-nav-bar > .psnb-tab-selected{
+    opacity: 1;
+    background-color: white;
+}
+
+.cps-container-box > .specials-container-outer,
+.cps-container-box > .pyroxene-container-outer,
+.cps-container-box > .packages-container-outer{
+    border-radius: 0.7vh;
+    background-color: #D8DADC;
+}
+
+.specials-container-outer > .specials-container > p,
+.pyroxene-container-outer > .pyroxene-container > p,
+.packages-container-outer > .packages-container > p{
+    text-align: center;
+}
+
+.cps-container-box > .specials-container-outer{
+    width: calc(100% - 1vh);
+    height: calc(100% - 2vh);
+    padding: 1vh 0.5vh 1vh 0.5vh;
+    display: none;
+    overflow: hidden;
+}
+
+.cps-container-box > .specials-container{
+    width: calc(100% - 0vh);
+    height: calc(100% - 0vh);
+    overflow: auto;
+}
+
+.cps-container-box > .pyroxene-container-outer{
+    width: calc(100% - 1vh);
+    height: calc(100% - 2vh);
+    padding: 1vh 0.5vh 1vh 0.5vh;
+    overflow: hidden;
+}
+
+.pyroxene-container-outer > .pyroxene-container{
+    width: calc(100% - 0vh);
+    height: calc(100% - 0vh);
+    display: inherit;
+    overflow: auto;
+}
+
+.cps-container-box > .packages-container-outer{
+    width: calc(100% - 1vh);
+    height: calc(100% - 2vh);
+    padding: 1vh 0.5vh 1vh 0.5vh;
+    overflow: hidden;
+    display: none;
+}
+
+.cps-container-box > .packages-container{
+    width: calc(100% - 0vh);
+    height: calc(100% - 0vh);
+    overflow: auto;
+}
+
+.pyroxene-container > .cpscb-pc-lines{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+.cpscb-pc-lines > .pyroxene-items{
+    width: 32%;
+    height: 100%;
+    background-image: url(../../../../../Assets/UI/Decoration/item-bg-deco-01.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+    border-radius: 1.5vh;
+    box-shadow: 0 0.3vh 0.5vh rgb(148, 148, 148),
+                inset 0.2vh 0.2vh 0.1vh rgb(255, 255, 255);
+    margin: auto;
+}
+
+.cpscb-pc-lines > .cpscb-pyroxene-item-7{
+    margin: 0 0 0 0.5vh;
+}
+
+.pyroxene-items > .cpscb-deco{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0),rgb(255, 255, 255));
+}
+
+.pyroxene-items > .cpscb-container{
+    width: 100%;
+    height: calc(100% - 1.5vh);
+    transform: translateY(-100%);
+    padding-top: 1.5vh;
+}
+
+.cpscb-container > .cpscb-pi1-title{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Main Bold';
+    color: #2e4864;
+}
+
+.cpscb-container > .cpscb-pi1-title > p{
+    margin-top: 0.3vh;
+    margin-bottom: 0.1vh;
+    font-size: 0.8rem;
+    font-family: 'Main Bold';
+}
+
+.cpscb-container > .cpscd-pi1-line{
+    width: calc(100% - 4vh);
+    height: 0.1vh;
+    margin: 0 2vh 0 2vh;
+    background-color: #2D4663;
+    box-shadow: 0 0 0.2vh #2D4663;
+    opacity: 0.3;
+}
+
+.cpscb-container > .cpscb-pi1-icon-box{
+    width: calc(100% - 2vh);
+    height: 50%;
+    padding: 1vh 4vh 0 4vh;
+    display: flex;
+}
+
+.cpscb-pi1-icon-box > img{
+    height: 100%;
+    align-items: center;
+}
+
+.cpscb-container > .cpscb-pi1-hint{
+    width: 100%;
+    height: calc(8% - 0.25vh);
+    transform: translateY(-100%);
+    background-color: #29415B;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    padding-top: 0.25vh;
+}
+
+.cpscb-container > .cpscb-pi1-btn-box{
+    width: calc(100% - 10vh);
+    height: calc(35% - calc(9% + 0.3vh));
+    padding: 0 5vh 0 5vh;
+}
+
+.cpscb-container > .cpscb-pi1-btn-box > .deco{
+    position: relative;
+    width: 100%;
+    height: calc(90% - 1vh);
+    transform: translateY(-20%) skew(-9deg);
+    border-radius: 1.2vh;
+    box-shadow: 0 0.3vh 0.5vh rgb(125, 125, 125);
+    background-color: #77DDFF;
+    padding-top: 1vh;
+    z-index: 1;
+}
+
+.cpscb-container > .cpscb-pi1-btn-box > img{
+    position: relative;
+    height: calc(92% - 0vh);
+    transform: translateY(-118%) translateX(7%);
+    float: right;
+    z-index: 2;
+}
+
+.cpscb-pi1-btn-box > .value-box-deco{
+    position: relative;
+    width: calc(100% - 2.4vh);
+    height: 40%;
+    margin: 0 1.2vh 0 1.2vh;
+    background-color: #2D4663;
+    border-radius: 0.6vh;
+    transform: translateY(-482%) translateX(1%) skew(-9deg);
+    z-index: 3;
+}
+
+.cpscb-container > .cpscb-pi1-btn-box > .container{
+    position: relative;
+    width: 100%;
+    height: 92%;
+    transform: translateY(-216%);
+    border-radius: 1.2vh;
+    z-index: 4;
+}
+
+.cpscb-pi1-btn-box > .container > .value-box{
+    width: calc(100% - 2.4vh);
+    height: 44%;
+    margin: 0 1.2vh 0 1.2vh;
+    border-radius: 0.6vh;
+    transform: translateY(0.5vh) translateX(0.3vh);
+    display: flex;
+}
+
+.cpscb-pi1-btn-box > .container > .value-box > .currency-text{
+    width: 5vh;
+    height: calc(100% - 2.4vh);
+    padding: 1.2vh 0 1.2vh 0;
+    font-size: 0.6rem;
+    letter-spacing: -1.1px;
+    text-align: center;
+    color: #74DCFF;
+}
+
+.cpscb-pi1-btn-box > .container > .value-box > .value{
+    width: calc(100% - 10vh);
+    height: calc(100% - 2vh);
+    padding: 1vh 0 1vh 0;
+    font-size: 0.8rem;
+    text-align: center;
+    color: white;
+}
+
+.cpscb-pi1-btn-box > .container > .text{
+    width: calc(100% - 0vh);
+    height: calc(50% - 2vh);
+    padding: 1vh 0 1vh 0;
+    font-size: 1.1rem;
+    text-align: center;
+    color: #2D4663;
+    font-family: 'Main Bold';
+}

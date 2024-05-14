@@ -1,0 +1,10 @@
+.mail-layer{
+    background-image: url(../../../../../Assets/UI/Background/growth-bg.png);
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.cnb-title-box > .mail-nav-title-text::after{
+    content: 'Mailbox';
+}
