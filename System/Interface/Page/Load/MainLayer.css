@@ -1,0 +1,16 @@
+/*Main Layer Setup*/
+#main-layer{
+    width: 96.267vw;
+    height: 100vh;
+    margin: auto;
+}
+
+    #ml-vid-op{
+        height: 100%;
+    }
+
+    #ml-game-logo{
+        width: 18vw;
+        transform: translateY(-98vh) translateX(3vw);
+        filter: drop-shadow(1px 1px 2px rgb(48, 48, 48));
+    }
