@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "Main";
+    src: url(../../../Assets/UI/Font/MainFont.ttf);
+}
+
+@font-face {
+    font-family: "Main Bold";
+    src: url(../../../Assets/UI/Font/MainFont_Bold.ttf);
+}
+
+@font-face {
+    font-family: "Wolf";
+    src: url(../../../Assets/UI/Font/Wolf\ Sans\ Regular.ttf);
+}
