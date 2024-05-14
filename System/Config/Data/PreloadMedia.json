@@ -1,0 +1,22 @@
+{
+    "files": [
+        {
+            "type": "VIDEO",
+            "sources": {
+                "h264": {
+                    "source": "Assets/Media/Preload/Video/logo.mp4",
+                    "size": 27888
+                }
+            }
+        },
+        {
+            "type": "VIDEO",
+            "sources": {
+                "h264": {
+                    "source": "Assets/Media/Preload/Video/title.mp4",
+                    "size": 4569964
+                }
+            }
+        }
+    ]
+}
