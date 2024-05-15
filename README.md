@@ -20,4 +20,7 @@ This is a Blue Archive Web project made in a mini version similar to the Blue Ar
 
 **Conclution**: This project need more impovement and reconstructure for best user experience
 
+## Disclaimer
+**Blue Archive is a registered trademark of NAT GAMES Co., Ltd. This repo is not affiliated with NEXON Korea Corp. & NEXON GAMES Co., Ltd. All game resources are copyrighted to the respective owners.**
+
 **Note**: This project still in development, I'm built it just for fun
