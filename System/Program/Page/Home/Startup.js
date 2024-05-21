@@ -23,7 +23,8 @@ const __Elmnt = {
     //Custom Container Element
     CustomMenuContainer: qs(".container-menu"),
     CustomAPContainer: qs(".container-ap-purchase"),
-    CustomPyroxeneShop: qs(".container-pyroxene-shop"),
+    CustomPyroxeneShopContainer: qs(".container-pyroxene-shop"),
+    CustomFullMenuContainer: qs(".mail-container"),
 
     //Custom Full Element
     CustomFullTitleText: qs(".cntb-title-text"),
