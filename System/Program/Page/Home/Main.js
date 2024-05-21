@@ -107,13 +107,13 @@ __Elmnt.NavMainAddBtn[1].addEventListener("click", () => {
     __Elmnt.CustomBox.classList.add("buy-pyroxene-box");
     __Elmnt.CustomTitle.classList.add("bpb-title");
     __Elmnt.CustomContainer.classList.add("bpb-container");
-    __Elmnt.CustomPyroxeneShop.style.display = "inherit";
+    __Elmnt.CustomPyroxeneShopContainer.style.display = "inherit";
     __Elmnt.CustomCloseBtn.addEventListener("click", () => {
         __Elmnt.CustomLayer.style.display = "none";
         __Elmnt.CustomBox.classList.remove("buy-pyroxene-box");
         __Elmnt.CustomTitle.classList.remove("bpb-title");
         __Elmnt.CustomContainer.classList.remove("bpb-container");
-        __Elmnt.CustomPyroxeneShop.style.display = "none";
+        __Elmnt.CustomPyroxeneShopContainer.style.display = "none";
     });
 });
 
@@ -176,12 +176,14 @@ __Elmnt.NavMenuBtn.addEventListener("click", () => {
 
 //Mail Action
 __Elmnt.NavMailBtn.addEventListener("click", () => {
-    __Elmnt.CustomLayer.style.display = "flex";
+    __Elmnt.CustomLayer.style.display = "inherit";
     __Elmnt.CustomLayer.classList.add("mail-layer");
     __Elmnt.CustomLayer.classList.add("custom-layer-full");
     __Elmnt.CustomLayer.classList.remove("custom-layer");
+    __Elmnt.CustomFullMenuContainer.style.display = "flex";
     __Elmnt.CustomBox.style.display = "none";
     __Elmnt.CustomContainer.style.display = "none";
+    __Elmnt.NavMailBtn.display = "inherit";
     
     __Elmnt.CustomFullTitleText.classList.add("mail-nav-title-text");
 
@@ -191,8 +193,10 @@ __Elmnt.NavMailBtn.addEventListener("click", () => {
         CustomFullLayer.classList.remove("mail-layer");
         CustomFullLayer.classList.remove("custom-layer-full");
         CustomFullLayer.classList.add("custom-layer");
+        __Elmnt.CustomFullMenuContainer.style.display = "none";
         __Elmnt.CustomBox.style.display = "inline";
         __Elmnt.CustomContainer.style.display = "inherit";
+        __Elmnt.NavMailBtn.display = "none";
         
         __Elmnt.CustomFullTitleText.classList.remove("mail-nav-title-text");
     });
