@@ -8,3 +8,221 @@
 .cnb-title-box > .mail-nav-title-text::after{
     content: 'Mailbox';
 }
+
+.mail-container{
+    width: 100%;
+    height: calc(100% - 7vh);
+    display: none;
+}
+
+.mc-sidebar-nav{
+    width: calc(20% - 10vh);
+    height: calc(100% - 6vh);
+    padding-top: 6vh;
+    padding-right: 10vh;
+}
+
+.mcsn-tab-box{
+    width: 100%;
+    height: 60%;
+}
+
+.sntb-unclaimed-tab,
+.sntb-history-tab{
+    width: 100%;
+    height: 20%;
+    margin-top: 2vh;
+    overflow: hidden;
+    font-size: 1.25rem;
+}
+
+.tbt-selected-box{
+    width: calc(100% - 4.5vh);
+    height: calc(100% - 3.6vh);
+    background-color: #2D4663;
+    color: #FFE000;
+    font-family: 'Main';
+    transform: skew(-9deg) translateX(-0.8vh);
+    border-radius: 0 0.7vw 0.7vw 0;
+    padding-top: 3.6vh;
+    padding-left: 4.5vh;
+}
+
+.tbt-content-box{
+    width: calc(100% - 4vh);
+    height: calc(100% - 3.6vh);
+    background-color: #FEFEFD;
+    color: #29415A;
+    font-family: 'Main';
+    padding-top: 3.6vh;
+    padding-left: 4vh;
+    box-shadow: 0vh 0.2vh 0.5vh rgb(130, 130, 130);
+}
+
+.snbtt-selected{
+    display: inherit;
+}
+
+.snbtt-unselected{
+    display: none;
+}
+
+.mcsn-tool-box{
+    width: 110%;
+    height: 30%;
+    margin-top: 6vh;
+}
+
+.sntb-items-box,
+.sntb-sort-box{
+    width: calc(100% - 6vh);
+    height: 10vh;
+    margin: 3vh auto auto auto;
+    border-radius: 0.8vh;
+    background-color: #F4F5F6;
+    color: #3E4449;
+    box-shadow: 0vh 0.4vh 0.4vh rgb(136, 136, 136);
+    display: flex;
+}
+
+.sntb-items-box > p{
+    width: calc(60% - 7vh);
+    height: calc(100% - 7vh);
+    padding: 3.5vh 3.5vh 3.5vh 2.2vh;
+    font-size: 1.2rem;
+}
+
+.sntb-sort-box > p{
+    width: calc(60% - 5.7vh);
+    height: calc(100% - 4.4vh);
+    padding: 2.2vh;
+    font-size: 1.1rem;
+}
+
+.sntb-items-box > .sntbtb-icon-box{
+    width: 40%;
+    height: 100%;
+    display: flex;
+}
+
+.sntb-sort-box > .sntbsb-icon-box{
+    width: calc(40% - 4vh);
+    height: calc(100% - 6vh);
+    display: flex;
+    padding: 3vh 2vh 3vh 2vh;
+}
+
+.sntbtb-icon-box > img{
+    height: calc(100% - 3vh);
+    padding: 1.5vh;
+}
+
+.sntbsb-icon-box > .img1,
+.sntbsb-icon-box > .img2{
+    height: 100%;
+    padding-left: 0.4vh;
+    padding-right: 0.4vh;
+}
+
+.sntbsb-icon-box > .img2{
+    transform: rotate(180deg);
+}
+
+.mc-container-box{
+    width: calc(80% - 4vh);
+    height: calc(100% - 6vh);
+    padding: 4vh 4vh 2vh 0vh;
+}
+
+.mccb-mail-counter{
+    width: calc(100% - 4vh);
+    color: #3E556D;
+    text-align: right;
+    font-size: 1.3rem;
+    padding-right: 4vh;
+}
+
+.mccb-mailbox{
+    width: 100%;
+    height: 80%;
+    margin-top: 1vh;
+    border-radius: 1.5vh;
+    background-color: rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.mccb-mailbox > .content{
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.mccb-mailbox > .deco{
+    width: 100%;
+    height: 100%;
+}
+
+.mccb-mailbox > .deco > img{
+    height: 80%;
+    margin-left: 35%;
+    margin-top: 10vh;
+}
+
+.mccb-mailbox > .deco > p{
+    width: 100%;
+    font-size: 1.5rem;
+    color: #28405B;
+    text-align: center;
+    transform: skew(-9deg) translateY(-20vh);
+}
+
+.mccb-bottom-box{
+    width: 100%;
+    height: 12%;
+    margin-top: 2.5vh;
+    display: flex;
+}
+
+.mccb-bottom-box > p{
+    width: calc(80% - 5vh);
+    height: calc(100% - 4vh);
+    padding: 2vh 2vh 2vh 3vh;
+    font-size: 1.2rem;
+    color: #506177;
+}
+
+.mccb-bottom-box > .mcbbb-claim-all-btn{
+    width: calc(20% - 4vh);
+    height: calc(100% - 2vh);
+    padding: 1vh 2vh 1vh 2vh;
+}
+
+.mcbbb-claim-all-btn > .deco{
+    width: 100%;
+    height: 100%;
+    transform: skew(-10deg);
+    border-radius: 1.2vh;
+    box-shadow: 0 0.3vh 0.4vh rgb(119, 119, 119);
+    background-color: #F2E755;
+}
+
+.mcbbb-claim-all-btn > .content{
+    width: 100%;
+    height: calc(100% - 2vh);
+    transform: translateY(-200%);
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: 'Wolf';
+}
+
+.mcbbb-claim-all-btn > .deco-effect{
+    height: 100%;
+    width: 100%;
+    background-image: url(../../../../../Assets/UI/Decoration/button-poly-03.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-100%) translateX(3%);
+}
