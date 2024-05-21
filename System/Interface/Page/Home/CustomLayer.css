@@ -113,6 +113,7 @@
 }
 
     .nav-bar > .cnb-back-btn-box{
+        position: relative;
         width: calc(8.5vh - 3vh);
         height: calc(8.5vh - 4vh);
         padding: 2vh 1.5vh 2vh 1.5vh;
@@ -120,6 +121,7 @@
         border-radius: 50%;
         display: flex;
         background-color: #466398;
+        z-index: 5;
     }
 
         .cnb-back-btn-box > .cnb-back-btn{
