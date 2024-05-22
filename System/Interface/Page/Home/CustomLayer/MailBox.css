@@ -195,6 +195,8 @@
     width: calc(20% - 4vh);
     height: calc(100% - 2vh);
     padding: 1vh 2vh 1vh 2vh;
+    filter: grayscale(1);
+    color: #999999;
 }
 
 .mcbbb-claim-all-btn > .deco{
