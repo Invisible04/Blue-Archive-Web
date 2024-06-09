@@ -9,7 +9,6 @@
 **Deficiency**
 * Not responsive: This project build by using laptop screen size, not for any others device.
 * Lack of libraries: This project built with few library and make this project lack of abilities
-* Pure Javascript with Libraries: Build in with Pure JS with Jquery, PHP and others js libraries
 
 **Libraries**
 - Jquery.min.js
