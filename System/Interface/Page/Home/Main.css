@@ -5,12 +5,14 @@
 }
 
 body{
+    position: relative;
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
     background-color: black;
     overflow: hidden;
+    z-index: -1;
 }
 
 /*Main Screen Setup*/
@@ -21,4 +23,5 @@ body{
     background-color: skyblue;
     background-image: url("../../../../Assets/UI/Background/SteelBackground.webp");
     overflow: hidden;
+    z-index: -1;
 }
