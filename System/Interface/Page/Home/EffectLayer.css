@@ -1,5 +1,7 @@
 /*Effect Layer Setup*/
 .effect-layer{
+    position: relative;
+    z-index: 76;
     width: 96.267vw;
     height: 100vh;
     margin: auto;
