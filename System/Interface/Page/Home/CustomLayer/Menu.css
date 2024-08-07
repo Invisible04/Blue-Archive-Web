@@ -1,84 +1,100 @@
-.custom-layer > .menu-box{
-    width: 40%;
-    height: 55%;
-}
-
-.mb-title > p::after{
+/* Navigation Style */
+.mb2-title-box > p::after{
     display: block;
-    content: 'Menu';
+    content: 'Menu Tab';
 }
 
-.mb-title > .deco{
-    width: 14%;
+.mb2-title-box > .cl3t-deco{
+    width: 33.5%;
 }
 
-.menu-box > .mb-container{
-    width: calc(100% - 3vh);
-    height: calc(100% - 10vh);
-    margin: 1.5vh;
-    border-radius: 1vh;
-    background-color: #C8C8C8;
+/* Tab Style */
+.cl-window-box > .clwb-menu-box{ /* Size of Popup Box */
+    width: 32%;
+    height: 45%;
 }
 
-.mb-container > .container-menu{
+.cl1bb-container > .container-menu{ /* Setup fixed Size of Inner Box */
     width: 100%;
     height: 100%;
-    display: flex;
-    overflow: hidden;
-}
 
-.mb-container > .container-deco-box{
-    display: none;
-}
+    .clcm-menu-content-box{
+        width: calc(100% - 2.6vh);
+        height: calc(100% - 2.5vh);
+        margin: 1vh 1.3vh 1.5vh 1.3vh;
+        border-radius: 1vh;
+        background-color: #C8C8C8;
+        display: flex;
+        overflow: hidden;
 
-.container-menu > .ccm-left-side{
-    width: 50%;
-    height: 100%;
-    margin: 1vh;
-}
+        .mcb-left-side-box{
+            margin: 1vh;
+        }
 
-.container-menu > .ccm-right-side{
-    width: 50%;
-    height: 100%;
-    margin: 1vh 1vh 1vh 0;
-}
+        .mcb-right-side-box{
+            margin: 1vh 1vh 1vh 0;
+        }
 
-.ccm-left-side > .ccm-item-box,
-.ccm-right-side > .ccm-item-box{
-    width: 100%;
-    height: 30%;
-    background-color: #EFEFEE;
-    border-radius: 1.5vh;
-    margin-bottom: 1vh;
-    box-shadow: 0 0.5vh 0.3vh rgb(100, 100, 100),
-                inset 0 0.5vh 0.3vh rgb(255, 255, 255);
-    display: flex;
-    overflow: hidden;
-}
+        .mcb-content-box{
+            width: 50%;
+            height: 100%;
 
-.ccm-right-side > .ccm-bulk-box,
-.ccm-left-side > .ccm-scrapbook-box{
-    display: none;
-}
+            .mcb-items-box{
+                width: 100%;
+                height: 30%;
+                background-color: #EFEFEE;
+                border-radius: 1.5vh;
+                margin-bottom: 1vh;
+                box-shadow: 0 0.5vh 0.3vh rgb(100, 100, 100),
+                            inset 0 0.5vh 0.3vh rgb(255, 255, 255);
+                display: flex;
+                overflow: hidden;
 
-.ccm-item-box > .ccmib-icon-box{
-    width: calc(40% - 6vh);
-    height: calc(100% - 6vh);
-    padding: 3vh;
-    padding-left: 3vh;
-    display: flex;
-}
+                .icon-box{
+                    width: calc(40% - 5vh);
+                    height: calc(100% - 5vh);
+                    padding: 2.5vh;
+                    padding-left: 2.5vh;
+                    display: flex;
 
-.ccmib-icon-box > img{
-    width: 100%;
-    align-self: center;
-}
+                    img{
+                        width: 100%;
+                        align-self: center;
+                    }
 
-.ccm-item-box > p{
-    width: 60%;
-    height: calc(100% - 5.5vh);
-    font-size: 1.2rem;
-    font-family: 'Main Bold';
-    text-align: center;
-    padding-top: 5.5vh;
+                    .ib-account{
+                        transform: translate(5%,10%);
+                    }
+
+                    .ib-equipment{
+                        width: calc(100% - 1vh);
+                        margin-left: 0.5vh;
+                    }
+                }
+
+                .details-box{
+                    width: 60%;
+                    height: 100%;
+
+                    p{
+                        height: calc(100% - 4vh);
+                        font-size: 1.05rem;
+                        font-family: 'Main Bold';
+                        text-align: center;
+                        padding-top: 4vh;
+                        color: #2e4864;
+                    }
+                }
+            }
+
+            .mcb-sticker-book-box{
+                .details-box{
+                    p{
+                        height: calc(100% - 3vh);
+                        padding-top: 3vh;
+                    }
+                }
+            }
+        }
+    }
 }
