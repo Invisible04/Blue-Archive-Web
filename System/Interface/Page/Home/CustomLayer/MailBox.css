@@ -1,18 +1,16 @@
-.mail-layer{
-    background-image: url(../../../../../Assets/UI/Background/growth-bg.png);
-    background-repeat: repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.cnb-title-box > .mail-nav-title-text::after{
+/* Navigation Style */
+.mb-title-box > p::after{
+    display: block;
     content: 'Mailbox';
 }
 
-.mail-container{
-    width: 100%;
-    height: calc(100% - 7vh);
-    display: none;
+.mb-title-box > .cl3t-deco{
+    width: 19%;
+}
+
+/* Tab Style */
+.clfb-mail-container{
+    display: flex;
 }
 
 .mc-sidebar-nav{
