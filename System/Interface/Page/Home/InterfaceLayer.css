@@ -1,9 +1,12 @@
 /*Interface Layer Setup*/
 .interface-layer{
+    position: relative;
+    z-index: 26;
     width: 96.267vw;
     height: 100vh;
     margin: auto;
     transform: translateY(-100%);
+    overflow: hidden;
 }
 
 .interface-layer > .top-box{
@@ -385,17 +388,25 @@
             width: 100%;
             height: 28%;
             display: flex;
+
         }
 
-            .preview-interface-box > .preview-change-btn{
-                width: 8%;
-                height: 60%;
-                align-self: center;
-                margin-left: auto;
+            .preview-interface-box > .preview-hider-btn{
                 margin-right: 4vh;
             }
 
-                .preview-change-btn > .preview-change-btn-deco{
+            .preview-interface-box > .preview-switch-btn{
+                margin-left: auto;
+                margin-right: 2vh;
+            }
+
+            .preview-interface-box > .preview-btn{
+                width: 7%;
+                height: 60%;
+                align-self: center;
+            }
+
+                .preview-btn > .preview-btn-deco{
                     width: 100%;
                     height: 100%;
                     transform: skew(-10deg);
@@ -403,19 +414,45 @@
                     background-color: rgba(255, 255, 255, 1);
                 }
 
-                .preview-change-btn > .preview-change-btn-box{
+                .preview-btn > .preview-btn-box{
                     width: 100%;
                     height: 100%;
                     transform: translateY(-100%);
                     display: flex;
                 }
 
-                    .preview-change-btn-box > img{
+                    .preview-hider-btn > .preview-btn-box > .pbb-icon-hide{
                         height: calc(100% - 2.4vh);
                         padding: 1.2vh;
                         margin: auto;
                         align-self: center;
                     }
+
+                    .preview-hider-btn > .preview-btn-box > .pbb-icon-unhide{
+                        height: calc(100% - 2vh);
+                        padding: 1vh;
+                        margin: auto;
+                        align-self: center;
+                        display: none;
+                    }
+
+                    .preview-switch-btn > .preview-btn-box > .pbb-switch-icon{
+                        height: calc(100% - 1.8vh);
+                        padding: 0.9vh;
+                        margin: auto;
+                        align-self: center;
+                    }
+
+                .preview-switch-btn > .pbb-switch-text{
+                    width: 100%;
+                    height: calc(100% - 2.4vh);
+                    padding-top: 2.4vh;
+                    font-size: 0.65rem;
+                    font-weight: bold;
+                    text-align: center;
+                    transform: translateY(-200%);
+                    display: none;
+                }
 
         /*********************************************  Event Icon Interface Setup  ******************************************************/
         .topright-box > .top-event-box{
@@ -428,19 +465,24 @@
                 height: 22.5vh;
                 float: right;
                 margin-right: 4vh;
+                overflow: hidden;
             }
 
                 .event-icon-box > .event-icon-preview{
+                    position: relative;
                     width: 100%;
                     height: 90%;
                     display: flex;
-                    overflow: hidden;
+                    transition: 0.5s ease-out;
+                    transform: translateX(-0%);
+                    opacity: 0;
                 }
 
                     .event-icon-preview > .event-preview-box{
                         width: 100%;
                         height: 100%;
                         display: flex;
+                        transition: 0.1s ease-in;
                     }
 
                         .event-preview-box > .event-preview{
@@ -464,7 +506,7 @@
                         display: grid;
                     }
 
-                    .dot-bar > .dot{
+                    .dot-bar > .db-dot{
                         width: 0.7vh;
                         height: 0.7vh;
                         background-color: #2C4C72;
@@ -473,12 +515,11 @@
                         grid-row: 1;
                     }
 
-                    .dot-bar > .dot:first-child{
+                    .dot-bar > .dot-selected{
                         background-color: #31C8FF;
-                        margin: 0.6vh 0vh 0.6vh 0.6vh;
                     }
 
-                    .dot-bar > .dot:last-child{
+                    .dot-bar > .db-dot:last-child{
                         margin: 0.6vh 0.6vh 0.6vh 0.6vh;
                     }
 
