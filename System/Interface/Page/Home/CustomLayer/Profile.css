@@ -1,0 +1,141 @@
+/* Navigation Style */
+.pb-title-box > p::after{
+    display: block;
+    content: 'Account Info';
+}
+
+.pb-title-box > .cl3t-deco{
+    width: 19%;
+}
+
+/* Content Style */
+.clfb-profile-container{
+    display: flex;
+
+    .display-box{
+        width: 43%;
+        height: 100%;
+        margin-right: 7%;
+
+        .student-display-box{
+            width: 100%;
+            height: 75%;
+            overflow: visible;
+
+            .student-display{
+                width: 80%;
+                height: calc(100vh - 7vh);
+                margin-left: auto;
+                background-color: rgba(255, 217, 0, 0.253);
+            }
+        }
+
+        .user-profile-detail{
+            width: calc(100% - 3.5vw);
+            height: 19%;
+            padding-left: 3.5vw;
+
+            .uid-box{
+                position: relative;
+                width: 30%;
+                height: 32%;
+                z-index: 55;
+                transform: skewX(-11deg);
+                border-radius: 0.4vh;
+                background-color: white;
+            }
+
+            .account-name-box{
+                position: relative;
+                width: 100%;
+                height: 75%;
+                z-index: 54;
+                transform: translateY(-10%) skewX(-11deg);
+                border-radius: 0.4vh;
+                background-color: rgba(45, 24, 102, 0.7);
+            }
+        }
+    }
+
+    .details-box{
+        width: calc(43% - 10vw);
+        height: calc(100% - 6vw);
+        margin-left: 7%;
+        padding: 3vw 5vw 3vw 5vw;
+
+        .title-box{
+            width: 100%;
+            height: 5%;
+            transform: skewX(-11deg);
+            border-radius: 0.6vh;
+            margin-bottom: 1.3vh;
+            background-color: #2B4975;
+        }
+        
+        .info-box{
+            width: calc(100% - 2vh);
+            min-height: calc(12% - 2vh);
+            border-radius: 0.6vh;
+            padding: 1vh;
+            margin-bottom: 2vh;
+            background-color: #F5FAFD;
+
+            .if-box{
+                width: calc(100% - 0vh);
+                background-color: white;
+                margin-bottom: 1.5vh;
+                margin-top: 1.5vh;
+                background-color: black;
+            }
+
+            hr{
+                border-top: 1px solid #D2D7DA;
+            }
+
+            .sensei-name-box{
+                height: calc(8vh - 0vh);
+                display: flex;
+                margin: 0;
+            }
+
+            .title-banner-box{
+                height: calc(9vh - 0vh);
+                margin-top: 0;
+            }
+
+            .student-rep-box{
+                height: calc(11vh - 0vh);
+            }
+
+            .greeting-box{
+                height: calc(11vh - 0vh);
+                margin-bottom: 0;
+            }
+        }
+
+        .button-box{
+            width: 100%;
+            height: 13%;
+            margin-top: 11%;
+            display: flex;
+            background-color: gold;
+
+            .bb-btn{
+                width: 49.2%;
+                height: 100%;
+                transform: skewX(-10deg);
+                border-radius: 1vh;
+                background-color: #83DEFD;
+                box-shadow: 0px 2px 4px rgb(100, 100, 100);
+            }
+
+            .player-info-btn{
+                
+            }
+
+            .id-card-btn{
+                margin-left: auto;
+            }
+        }
+    }
+}
