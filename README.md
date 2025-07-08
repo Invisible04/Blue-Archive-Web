@@ -7,6 +7,7 @@
 *Blue Archive Web project is a mini version of Blue Archive game with weight load. If you want to play the full and more stable Blue Archive game, you can download it from Google Play Store and App Store. Whereas, on windows you can download at Steam or just use Bluestack, Nox Player, LD Player and others to play it.*
 
 ![Preview](.github/src/img/Preview01.png "Preview")
+Preview Mock-up project
 
 **Deficiency**
 * Not responsive: This project build by using laptop screen size, not for any others device.
